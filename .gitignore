@@ -1,0 +1,10 @@
+*.sh
+*.test
+coverage.out
+
+# vscode
+.vscode
+
+# intellij files
+.idea/
+vendor/
