@@ -17,8 +17,8 @@ type triangle struct {
 
 func main() {
 
-	s := square{ sideLength: 2.2}
-	
+	s := square{sideLength: 2.2}
+
 	var t triangle
 	t.base = 2
 	t.height = 3

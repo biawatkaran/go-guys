@@ -2,15 +2,15 @@ package main
 
 import (
 	"fmt"
-	"sync"
 	"runtime"
+	"sync"
 )
 
 func main() {
 
 	fmt.Println("CPUs:", runtime.NumCPU())
 	fmt.Println("Goroutines:", runtime.NumGoroutine())
-	
+
 	counter := 0
 
 	const gs = 100
@@ -19,9 +19,9 @@ func main() {
 
 	var mu sync.Mutex //remove this mu references and you have race condition check using `go run -race main.go` command
 
-	for i :=0; i<gs; i++ {
+	for i := 0; i < gs; i++ {
 
-		go func(){
+		go func() {
 			mu.Lock()
 			v := counter
 			runtime.Gosched()

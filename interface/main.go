@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 type bot interface {
-
 	getGreeting() string
 }
 
@@ -27,12 +26,12 @@ func printGreeting(b bot) {
 	fmt.Println(b.getGreeting())
 }
 
-/* 
+/*
 //BAD Way 1. go doesn't allow 2. functioning wise same - that's where interface comes :)
 func printGreeting(sb spanishBot) {
 
 	fmt.Println(sb.getGreeting())
-} 
+}
 
 func printGreeting(eb englishBot) {
 

@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 type x int
+
 var y x
 var z int
 

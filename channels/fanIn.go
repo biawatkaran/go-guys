@@ -10,7 +10,7 @@ func main() {
 
 	c := fanIn(boring("Joe"), boring("Ann"))
 
-	for i := 0; i < 14; i++ {
+	for i := 0; i < 10; i++ {
 
 		fmt.Println(<-c)
 	}
