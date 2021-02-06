@@ -1,14 +1,8 @@
-package main
+// Package Sums infinite numbers
+package plain
 
-import "fmt"
-
-func main() {
-
-	fmt.Println("2 +3 =", sum(2, 3))
-
-}
-
-func sum(n ...int) int {
+// Sum add given n numbers
+func Sum(n ...int) int {
 
 	sum := 0
 

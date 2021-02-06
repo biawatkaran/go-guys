@@ -1,11 +1,21 @@
-package main
+package plain
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestSum(t *testing.T) {
 
-	x := sum(2, 3)
+	x := Sum(2, 3)
 	if x != 5 {
 		t.Error("Expected ", 5, " Got ", x)
 	}
+}
+
+func ExampleSum() {
+
+	fmt.Println(Sum(2,3))
+	// Output:
+	// 5
 }
