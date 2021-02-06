@@ -15,7 +15,7 @@ func TestSum(t *testing.T) {
 
 func ExampleSum() {
 
-	fmt.Println(Sum(2,3))
+	fmt.Println(Sum(2, 3))
 	// Output:
 	// 5
 }

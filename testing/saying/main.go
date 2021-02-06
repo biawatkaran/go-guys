@@ -1,8 +1,10 @@
+// Package Greet
 package saying
 
 import "fmt"
 
-func Greet(s string) string  {
+// Greet greets a person with message
+func Greet(s string) string {
 
-	return fmt.Sprint("Welcome my dear ",s)
+	return fmt.Sprint("Welcome my dear ", s)
 }

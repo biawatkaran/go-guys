@@ -1,6 +1,9 @@
 package saying
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestGreet(t *testing.T) {
 
@@ -8,5 +11,19 @@ func TestGreet(t *testing.T) {
 
 	if s != "Welcome my dear Karan" {
 		t.Error("Got", s, "Expected", "Welcome my dear Karan")
+	}
+}
+
+func ExampleGreet() {
+
+	fmt.Println(Greet("Karan"))
+	// Output:
+	// Welcome my dear Karan
+}
+
+func BenchmarkGreet(b *testing.B) { //go test -bench ./Greet
+
+	for i := 0; i < b.N; i++ {
+		Greet("Karan")
 	}
 }

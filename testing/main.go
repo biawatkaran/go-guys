@@ -1,11 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/biawatkaran/go-guys/testing/saying"
+)
 
 func main() {
 
-	fmt.Println("Karan")
-
+	fmt.Println(saying.Greet("Karan"))
 }
-
-
